@@ -78,10 +78,10 @@ export default function Index() {
       >
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: "#b5e742" }}>
-            <span className="text-sm font-bold" style={{ color: "#0e1a05", fontFamily: "Oswald, sans-serif" }}>ЭС</span>
+            <span className="text-sm font-bold" style={{ color: "#0e1a05", fontFamily: "Oswald, sans-serif" }}>GCG</span>
           </div>
           <span className="text-lg font-bold tracking-wider" style={{ fontFamily: "Oswald, sans-serif", color: "#b5e742" }}>
-            ЭкоСила
+            GREEN CLEAN GROUP
           </span>
         </div>
 
