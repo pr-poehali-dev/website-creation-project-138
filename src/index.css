@@ -34,11 +34,11 @@
     --sidebar-ring: 217.2 91.2% 59.8%;
 
     /* Кастомные цвета */
-    --green-lime: #b5e742;
-    --green-dark: #1a2e0a;
-    --green-mid: #2d4a14;
-    --earth: #8b6914;
-    --cream: #f4f0e0;
+    --green-lime: #2ecc71;
+    --green-dark: #1a1a1a;
+    --green-mid: #2d2d2d;
+    --earth: #8a8a8a;
+    --cream: #ffffff;
   }
 }
 
@@ -54,8 +54,8 @@
   body {
     @apply bg-background text-foreground;
     font-family: "Golos Text", sans-serif;
-    background-color: #0e1a05;
-    color: #f4f0e0;
+    background-color: #2d2d2d;
+    color: #ffffff;
   }
 }
 
@@ -214,10 +214,10 @@
 .service-card {
   background: linear-gradient(
     135deg,
-    rgba(45, 74, 20, 0.4),
-    rgba(14, 26, 5, 0.8)
+    rgba(46, 204, 113, 0.1),
+    rgba(26, 26, 26, 0.9)
   );
-  border: 1px solid rgba(181, 231, 66, 0.15);
+  border: 1px solid rgba(46, 204, 113, 0.15);
   transition: all 0.4s ease;
   position: relative;
   overflow: hidden;
@@ -242,7 +242,7 @@
 
 .service-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(181, 231, 66, 0.4);
+  border-color: rgba(46, 204, 113, 0.4);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
 }
 
@@ -294,25 +294,25 @@
 .review-card {
   background: linear-gradient(
     135deg,
-    rgba(45, 74, 20, 0.3),
-    rgba(26, 46, 10, 0.6)
+    rgba(46, 204, 113, 0.08),
+    rgba(26, 26, 26, 0.7)
   );
-  border: 1px solid rgba(181, 231, 66, 0.1);
+  border: 1px solid rgba(46, 204, 113, 0.1);
   transition: all 0.35s ease;
 }
 
 .review-card:hover {
-  border-color: rgba(181, 231, 66, 0.3);
+  border-color: rgba(46, 204, 113, 0.3);
   transform: translateY(-4px);
 }
 
 /* Секция с зелёным фоном */
 .section-dark {
-  background-color: #0e1a05;
+  background-color: #1a1a1a;
 }
 
 .section-mid {
-  background-color: #152209;
+  background-color: #2d2d2d;
 }
 
 /* Scrollbar */
@@ -320,7 +320,7 @@
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #0e1a05;
+  background: #1a1a1a;
 }
 ::-webkit-scrollbar-thumb {
   background: var(--green-lime);
@@ -338,7 +338,7 @@
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(14, 26, 5, 0.95) 0%,
+    rgba(26, 26, 26, 0.95) 0%,
     transparent 50%
   );
   opacity: 0;

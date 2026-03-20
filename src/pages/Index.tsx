@@ -69,18 +69,18 @@ export default function Index() {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: "#0e1a05", color: "#f4f0e0" }}>
+    <div className="min-h-screen" style={{ backgroundColor: "#2d2d2d", color: "#ffffff" }}>
 
       {/* NAVBAR */}
       <nav
         className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-4"
-        style={{ backgroundColor: "rgba(14,26,5,0.92)", backdropFilter: "blur(12px)", borderBottom: "1px solid rgba(181,231,66,0.1)" }}
+        style={{ backgroundColor: "rgba(26,26,26,0.92)", backdropFilter: "blur(12px)", borderBottom: "1px solid rgba(46,204,113,0.1)" }}
       >
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: "#b5e742" }}>
-            <span className="text-sm font-bold" style={{ color: "#0e1a05", fontFamily: "Oswald, sans-serif" }}>GCG</span>
+          <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: "#2ecc71" }}>
+            <span className="text-sm font-bold" style={{ color: "#1a1a1a", fontFamily: "Oswald, sans-serif" }}>GCG</span>
           </div>
-          <span className="text-lg font-bold tracking-wider" style={{ fontFamily: "Oswald, sans-serif", color: "#b5e742" }}>
+          <span className="text-lg font-bold tracking-wider" style={{ fontFamily: "Oswald, sans-serif", color: "#2ecc71" }}>
             GREEN CLEAN GROUP
           </span>
         </div>
@@ -98,7 +98,7 @@ export default function Index() {
           Вызвать мастера
         </button>
 
-        <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)} style={{ color: "#b5e742" }}>
+        <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)} style={{ color: "#2ecc71" }}>
           <Icon name={menuOpen ? "X" : "Menu"} size={24} />
         </button>
       </nav>
@@ -106,10 +106,10 @@ export default function Index() {
       {/* MOBILE MENU */}
       {menuOpen && (
         <div className="fixed inset-0 z-40 flex flex-col items-center justify-center gap-8 md:hidden"
-          style={{ backgroundColor: "rgba(14,26,5,0.98)", backdropFilter: "blur(20px)" }}>
+          style={{ backgroundColor: "rgba(26,26,26,0.98)", backdropFilter: "blur(20px)" }}>
           {[["hero", "Главная"], ["about", "О нас"], ["services", "Услуги"], ["portfolio", "Портфолио"], ["reviews", "Отзывы"], ["contacts", "Контакты"]].map(([id, label]) => (
             <button key={id} onClick={() => scrollTo(id)}
-              className="text-2xl font-bold tracking-widest uppercase transition-colors hover:text-[#b5e742]"
+              className="text-2xl font-bold tracking-widest uppercase transition-colors hover:text-[#2ecc71]"
               style={{ fontFamily: "Oswald, sans-serif" }}>
               {label}
             </button>
@@ -124,18 +124,18 @@ export default function Index() {
       <section id="hero" className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <img src={TREE_IMG} alt="hero" className="w-full h-full object-cover opacity-25" />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #0e1a05 30%, rgba(14,26,5,0.6) 70%, #0e1a05 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, #1a1a1a 30%, rgba(26,26,26,0.6) 70%, #1a1a1a 100%)" }} />
         </div>
 
         <div className="absolute right-0 top-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-5 animate-spin-slow hidden lg:block"
-          style={{ border: "2px dashed #b5e742", right: "-150px" }} />
+          style={{ border: "2px dashed #2ecc71", right: "-150px" }} />
         <div className="absolute right-20 top-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full opacity-10 animate-float hidden lg:block"
-          style={{ background: "radial-gradient(circle, rgba(181,231,66,0.3) 0%, transparent 70%)" }} />
+          style={{ background: "radial-gradient(circle, rgba(46,204,113,0.3) 0%, transparent 70%)" }} />
 
         <div className="relative z-10 px-6 md:px-12 max-w-5xl">
           <div className="animate-fade-up">
             <span className="inline-block px-4 py-1 rounded-full text-xs font-semibold tracking-widest uppercase mb-6"
-              style={{ backgroundColor: "rgba(181,231,66,0.15)", color: "#b5e742", border: "1px solid rgba(181,231,66,0.3)", fontFamily: "Oswald, sans-serif" }}>
+              style={{ backgroundColor: "rgba(46,204,113,0.15)", color: "#2ecc71", border: "1px solid rgba(46,204,113,0.3)", fontFamily: "Oswald, sans-serif" }}>
               Профессиональный уход за территорией
             </span>
           </div>
@@ -143,12 +143,12 @@ export default function Index() {
           <h1 className="animate-fade-up-delay-1 text-5xl md:text-7xl lg:text-8xl font-bold leading-none mb-6"
             style={{ fontFamily: "Oswald, sans-serif", lineHeight: 1.05 }}>
             ДЕЛАЕМ<br />
-            <span style={{ color: "#b5e742" }}>ТЕРРИТОРИЮ</span><br />
+            <span style={{ color: "#2ecc71" }}>ТЕРРИТОРИЮ</span><br />
             ИДЕАЛЬНОЙ
           </h1>
 
           <p className="animate-fade-up-delay-2 text-lg md:text-xl max-w-xl mb-10 leading-relaxed"
-            style={{ color: "rgba(244,240,224,0.7)" }}>
+            style={{ color: "rgba(255,255,255,0.7)" }}>
             Опиловка деревьев, покос травы, вывоз мусора — всё под ключ. Приедем в день обращения.
           </p>
 
@@ -157,8 +157,8 @@ export default function Index() {
               Получить расчёт
             </button>
             <button onClick={() => scrollTo("services")}
-              className="flex items-center gap-2 px-8 py-4 rounded-full text-base font-semibold transition-all hover:border-[#b5e742] hover:text-[#b5e742]"
-              style={{ border: "1px solid rgba(244,240,224,0.3)", color: "rgba(244,240,224,0.8)", fontFamily: "Oswald, sans-serif", letterSpacing: "0.08em" }}>
+              className="flex items-center gap-2 px-8 py-4 rounded-full text-base font-semibold transition-all hover:border-[#2ecc71] hover:text-[#2ecc71]"
+              style={{ border: "1px solid rgba(255,255,255,0.3)", color: "rgba(255,255,255,0.8)", fontFamily: "Oswald, sans-serif", letterSpacing: "0.08em" }}>
               Наши услуги
               <Icon name="ArrowRight" size={18} />
             </button>
@@ -168,25 +168,25 @@ export default function Index() {
         <div className="relative z-10 mt-20 px-6 md:px-12 grid grid-cols-3 gap-6 max-w-2xl">
           {[["500+", "Объектов сдано"], ["7 лет", "На рынке"]].map(([num, label]) => (
             <div key={num} className="flex flex-col gap-1">
-              <span className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "Oswald, sans-serif", color: "#b5e742" }}>{num}</span>
-              <span className="text-xs md:text-sm" style={{ color: "rgba(244,240,224,0.5)", fontFamily: "Oswald, sans-serif", letterSpacing: "0.05em" }}>{label}</span>
+              <span className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "Oswald, sans-serif", color: "#2ecc71" }}>{num}</span>
+              <span className="text-xs md:text-sm" style={{ color: "rgba(255,255,255,0.5)", fontFamily: "Oswald, sans-serif", letterSpacing: "0.05em" }}>{label}</span>
             </div>
           ))}
         </div>
 
         <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-float">
-          <span className="text-xs tracking-widest uppercase" style={{ color: "rgba(244,240,224,0.4)", fontFamily: "Oswald, sans-serif" }}>Листай</span>
-          <Icon name="ChevronDown" size={20} style={{ color: "#b5e742" }} />
+          <span className="text-xs tracking-widest uppercase" style={{ color: "rgba(255,255,255,0.4)", fontFamily: "Oswald, sans-serif" }}>Листай</span>
+          <Icon name="ChevronDown" size={20} style={{ color: "#2ecc71" }} />
         </div>
       </section>
 
       {/* MARQUEE */}
-      <div className="overflow-hidden py-4" style={{ backgroundColor: "#b5e742" }}>
+      <div className="overflow-hidden py-4" style={{ backgroundColor: "#2ecc71" }}>
         <div className="flex animate-marquee whitespace-nowrap">
           {Array(2).fill(["ОПИЛОВКА ДЕРЕВЬЕВ", "ПОКОС ТРАВЫ", "ВЫВОЗ МУСОРА", "БЫСТРЫЙ ВЫЕЗД", "ГАРАНТИЯ КАЧЕСТВА"]).flat().map((item, i) => (
             <span key={i} className="inline-flex items-center gap-4 mr-12 text-sm font-bold tracking-widest"
-              style={{ fontFamily: "Oswald, sans-serif", color: "#0e1a05" }}>
-              <span className="w-2 h-2 rounded-full inline-block" style={{ backgroundColor: "#0e1a05" }} />
+              style={{ fontFamily: "Oswald, sans-serif", color: "#1a1a1a" }}>
+              <span className="w-2 h-2 rounded-full inline-block" style={{ backgroundColor: "#1a1a1a" }} />
               {item}
             </span>
           ))}
@@ -197,15 +197,15 @@ export default function Index() {
       <section id="about" className="py-24 px-6 md:px-12 section-mid">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="text-xs font-bold tracking-widest uppercase mb-4 block" style={{ color: "#b5e742", fontFamily: "Oswald, sans-serif" }}>— О компании</span>
+            <span className="text-xs font-bold tracking-widest uppercase mb-4 block" style={{ color: "#2ecc71", fontFamily: "Oswald, sans-serif" }}>— О компании</span>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight" style={{ fontFamily: "Oswald, sans-serif" }}>
               8 ЛЕТ ДЕЛАЕМ<br />
-              <span style={{ color: "#b5e742" }}>ЧИСТО И КРАСИВО</span>
+              <span style={{ color: "#2ecc71" }}>ЧИСТО И КРАСИВО</span>
             </h2>
-            <p className="text-base leading-relaxed mb-8" style={{ color: "rgba(244,240,224,0.7)" }}>
+            <p className="text-base leading-relaxed mb-8" style={{ color: "rgba(255,255,255,0.7)" }}>
               Мы — команда профессионалов по уходу за территорией. За 8 лет выполнили более 500 проектов: от частных дачных участков до городских парков и промышленных объектов.
             </p>
-            <p className="text-base leading-relaxed mb-10" style={{ color: "rgba(244,240,224,0.7)" }}>
+            <p className="text-base leading-relaxed mb-10" style={{ color: "rgba(255,255,255,0.7)" }}>
               Используем сертифицированное оборудование, соблюдаем все нормы безопасности и даём письменную гарантию на все виды работ.
             </p>
             <div className="grid grid-cols-2 gap-6">
@@ -217,10 +217,10 @@ export default function Index() {
               ].map(([icon, label], i) => (
                 <div key={i} className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ backgroundColor: "rgba(181,231,66,0.1)", border: "1px solid rgba(181,231,66,0.2)" }}>
-                    <Icon name={icon} size={18} style={{ color: "#b5e742" }} />
+                    style={{ backgroundColor: "rgba(46,204,113,0.1)", border: "1px solid rgba(46,204,113,0.2)" }}>
+                    <Icon name={icon} size={18} style={{ color: "#2ecc71" }} />
                   </div>
-                  <span className="text-sm font-medium" style={{ color: "rgba(244,240,224,0.8)" }}>{label}</span>
+                  <span className="text-sm font-medium" style={{ color: "rgba(255,255,255,0.8)" }}>{label}</span>
                 </div>
               ))}
             </div>
@@ -229,10 +229,10 @@ export default function Index() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-2xl aspect-[4/5]">
               <img src={LAWN_IMG} alt="О нас" className="w-full h-full object-cover" />
-              <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(14,26,5,0.8), transparent)" }} />
+              <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(26,26,26,0.8), transparent)" }} />
             </div>
             <div className="absolute -bottom-6 -left-6 p-6 rounded-2xl"
-              style={{ backgroundColor: "#b5e742", color: "#0e1a05" }}>
+              style={{ backgroundColor: "#2ecc71", color: "#1a1a1a" }}>
               <div className="text-4xl font-black" style={{ fontFamily: "Oswald, sans-serif" }}>500+</div>
               <div className="text-xs font-bold tracking-wide uppercase" style={{ fontFamily: "Oswald, sans-serif" }}>Проектов завершено</div>
             </div>
@@ -244,9 +244,9 @@ export default function Index() {
       <section id="services" className="py-24 px-6 md:px-12 section-dark">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
-            <span className="text-xs font-bold tracking-widest uppercase mb-4 block" style={{ color: "#b5e742", fontFamily: "Oswald, sans-serif" }}>— Что мы делаем</span>
+            <span className="text-xs font-bold tracking-widest uppercase mb-4 block" style={{ color: "#2ecc71", fontFamily: "Oswald, sans-serif" }}>— Что мы делаем</span>
             <h2 className="text-4xl md:text-6xl font-bold" style={{ fontFamily: "Oswald, sans-serif" }}>
-              НАШИ <span style={{ color: "#b5e742" }}>УСЛУГИ</span>
+              НАШИ <span style={{ color: "#2ecc71" }}>УСЛУГИ</span>
             </h2>
           </div>
 
@@ -255,21 +255,21 @@ export default function Index() {
               <div key={i} className="service-card rounded-2xl overflow-hidden group cursor-pointer">
                 <div className="relative h-52 overflow-hidden">
                   <img src={s.img} alt={s.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                  <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent, rgba(14,26,5,0.9))" }} />
+                  <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, transparent, rgba(26,26,26,0.9))" }} />
                   <div className="absolute top-4 left-4 w-10 h-10 rounded-full flex items-center justify-center"
-                    style={{ backgroundColor: "#b5e742" }}>
-                    <Icon name={s.icon} size={18} style={{ color: "#0e1a05" }} />
+                    style={{ backgroundColor: "#2ecc71" }}>
+                    <Icon name={s.icon} size={18} style={{ color: "#1a1a1a" }} />
                   </div>
                   <div className="absolute bottom-4 right-4 px-3 py-1 rounded-full text-xs font-bold"
-                    style={{ backgroundColor: "rgba(181,231,66,0.2)", color: "#b5e742", border: "1px solid rgba(181,231,66,0.4)", fontFamily: "Oswald, sans-serif", letterSpacing: "0.05em" }}>
+                    style={{ backgroundColor: "rgba(46,204,113,0.2)", color: "#2ecc71", border: "1px solid rgba(46,204,113,0.4)", fontFamily: "Oswald, sans-serif", letterSpacing: "0.05em" }}>
                     {s.price}
                   </div>
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-3" style={{ fontFamily: "Oswald, sans-serif" }}>{s.title}</h3>
-                  <p className="text-sm leading-relaxed" style={{ color: "rgba(244,240,224,0.6)" }}>{s.desc}</p>
+                  <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.6)" }}>{s.desc}</p>
                   <button className="mt-5 flex items-center gap-2 text-sm font-semibold transition-colors hover:text-white"
-                    style={{ color: "#b5e742", fontFamily: "Oswald, sans-serif", letterSpacing: "0.08em" }}>
+                    style={{ color: "#2ecc71", fontFamily: "Oswald, sans-serif", letterSpacing: "0.08em" }}>
                     УЗНАТЬ ЦЕНУ <Icon name="ArrowRight" size={16} />
                   </button>
                 </div>
@@ -284,7 +284,7 @@ export default function Index() {
         <div className="max-w-6xl mx-auto">
           <div className="mb-16 flex flex-wrap items-end justify-between gap-6">
             <div>
-              <span className="text-xs font-bold tracking-widest uppercase mb-4 block" style={{ color: "#b5e742", fontFamily: "Oswald, sans-serif" }}>— Наши работы</span>
+              <span className="text-xs font-bold tracking-widest uppercase mb-4 block" style={{ color: "#2ecc71", fontFamily: "Oswald, sans-serif" }}>— Наши работы</span>
               <h2 className="text-4xl md:text-6xl font-bold" style={{ fontFamily: "Oswald, sans-serif" }}>ПОРТФОЛИО</h2>
             </div>
             <button className="btn-lime px-6 py-3 rounded-full text-sm">Все проекты</button>
@@ -298,7 +298,7 @@ export default function Index() {
                 <div className="overlay">
                   <div className="absolute bottom-4 left-4 right-4">
                     <span className="text-xs font-bold px-2 py-1 rounded-full mb-2 inline-block"
-                      style={{ backgroundColor: "#b5e742", color: "#0e1a05", fontFamily: "Oswald, sans-serif" }}>
+                      style={{ backgroundColor: "#2ecc71", color: "#1a1a1a", fontFamily: "Oswald, sans-serif" }}>
                       {item.tag}
                     </span>
                     <h4 className="text-base font-bold" style={{ fontFamily: "Oswald, sans-serif" }}>{item.title}</h4>
@@ -314,7 +314,7 @@ export default function Index() {
       <section id="reviews" className="py-24 px-6 md:px-12 section-dark">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
-            <span className="text-xs font-bold tracking-widest uppercase mb-4 block" style={{ color: "#b5e742", fontFamily: "Oswald, sans-serif" }}>— Что говорят клиенты</span>
+            <span className="text-xs font-bold tracking-widest uppercase mb-4 block" style={{ color: "#2ecc71", fontFamily: "Oswald, sans-serif" }}>— Что говорят клиенты</span>
             <h2 className="text-4xl md:text-6xl font-bold" style={{ fontFamily: "Oswald, sans-serif" }}>ОТЗЫВЫ</h2>
           </div>
 
@@ -323,20 +323,20 @@ export default function Index() {
               <div key={i} className="review-card rounded-2xl p-7">
                 <div className="flex gap-1 mb-4">
                   {Array(r.rating).fill(0).map((_, j) => (
-                    <span key={j} style={{ color: "#b5e742" }}>★</span>
+                    <span key={j} style={{ color: "#2ecc71" }}>★</span>
                   ))}
                 </div>
-                <p className="text-base leading-relaxed mb-6" style={{ color: "rgba(244,240,224,0.8)" }}>
+                <p className="text-base leading-relaxed mb-6" style={{ color: "rgba(255,255,255,0.8)" }}>
                   «{r.text}»
                 </p>
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-full flex items-center justify-center font-bold text-sm"
-                    style={{ backgroundColor: "rgba(181,231,66,0.15)", color: "#b5e742", border: "1px solid rgba(181,231,66,0.2)", fontFamily: "Oswald, sans-serif" }}>
+                    style={{ backgroundColor: "rgba(46,204,113,0.15)", color: "#2ecc71", border: "1px solid rgba(46,204,113,0.2)", fontFamily: "Oswald, sans-serif" }}>
                     {r.name[0]}
                   </div>
                   <div>
                     <div className="font-semibold text-sm" style={{ fontFamily: "Oswald, sans-serif" }}>{r.name}</div>
-                    <div className="text-xs" style={{ color: "rgba(244,240,224,0.5)" }}>{r.role}</div>
+                    <div className="text-xs" style={{ color: "rgba(255,255,255,0.5)" }}>{r.role}</div>
                   </div>
                 </div>
               </div>
@@ -349,14 +349,14 @@ export default function Index() {
       <section id="contacts" className="py-24 px-6 md:px-12 section-mid">
         <div className="max-w-6xl mx-auto">
           <div className="mb-16">
-            <span className="text-xs font-bold tracking-widest uppercase mb-4 block" style={{ color: "#b5e742", fontFamily: "Oswald, sans-serif" }}>— Свяжитесь с нами</span>
+            <span className="text-xs font-bold tracking-widest uppercase mb-4 block" style={{ color: "#2ecc71", fontFamily: "Oswald, sans-serif" }}>— Свяжитесь с нами</span>
             <h2 className="text-4xl md:text-6xl font-bold" style={{ fontFamily: "Oswald, sans-serif" }}>
-              ОСТАВЬТЕ <span style={{ color: "#b5e742" }}>ЗАЯВКУ</span>
+              ОСТАВЬТЕ <span style={{ color: "#2ecc71" }}>ЗАЯВКУ</span>
             </h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-12 items-start">
-            <div className="p-8 rounded-2xl" style={{ backgroundColor: "rgba(45,74,20,0.3)", border: "1px solid rgba(181,231,66,0.15)" }}>
+            <div className="p-8 rounded-2xl" style={{ backgroundColor: "rgba(46,204,113,0.3)", border: "1px solid rgba(46,204,113,0.15)" }}>
               <h3 className="text-xl font-bold mb-6" style={{ fontFamily: "Oswald, sans-serif" }}>Расчёт стоимости</h3>
               <div className="flex flex-col gap-4">
                 <input
@@ -365,7 +365,7 @@ export default function Index() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl text-sm outline-none"
-                  style={{ backgroundColor: "rgba(14,26,5,0.7)", border: "1px solid rgba(181,231,66,0.2)", color: "#f4f0e0", fontFamily: "Golos Text, sans-serif" }}
+                  style={{ backgroundColor: "rgba(26,26,26,0.7)", border: "1px solid rgba(46,204,113,0.2)", color: "#ffffff", fontFamily: "Golos Text, sans-serif" }}
                 />
                 <input
                   type="tel"
@@ -373,25 +373,25 @@ export default function Index() {
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl text-sm outline-none"
-                  style={{ backgroundColor: "rgba(14,26,5,0.7)", border: "1px solid rgba(181,231,66,0.2)", color: "#f4f0e0", fontFamily: "Golos Text, sans-serif" }}
+                  style={{ backgroundColor: "rgba(26,26,26,0.7)", border: "1px solid rgba(46,204,113,0.2)", color: "#ffffff", fontFamily: "Golos Text, sans-serif" }}
                 />
                 <select
                   value={formData.service}
                   onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl text-sm outline-none"
-                  style={{ backgroundColor: "rgba(14,26,5,0.7)", border: "1px solid rgba(181,231,66,0.2)", color: formData.service ? "#f4f0e0" : "rgba(244,240,224,0.4)", fontFamily: "Golos Text, sans-serif" }}
+                  style={{ backgroundColor: "rgba(26,26,26,0.7)", border: "1px solid rgba(46,204,113,0.2)", color: formData.service ? "#ffffff" : "rgba(255,255,255,0.4)", fontFamily: "Golos Text, sans-serif" }}
                 >
-                  <option value="" style={{ backgroundColor: "#0e1a05" }}>Выберите услугу</option>
-                  <option value="tree" style={{ backgroundColor: "#0e1a05" }}>Опиловка деревьев</option>
-                  <option value="lawn" style={{ backgroundColor: "#0e1a05" }}>Покос травы</option>
-                  <option value="trash" style={{ backgroundColor: "#0e1a05" }}>Вывоз мусора</option>
-                  <option value="complex" style={{ backgroundColor: "#0e1a05" }}>Комплексный уход</option>
+                  <option value="" style={{ backgroundColor: "#1a1a1a" }}>Выберите услугу</option>
+                  <option value="tree" style={{ backgroundColor: "#1a1a1a" }}>Опиловка деревьев</option>
+                  <option value="lawn" style={{ backgroundColor: "#1a1a1a" }}>Покос травы</option>
+                  <option value="trash" style={{ backgroundColor: "#1a1a1a" }}>Вывоз мусора</option>
+                  <option value="complex" style={{ backgroundColor: "#1a1a1a" }}>Комплексный уход</option>
                 </select>
                 <button className="btn-lime w-full py-4 rounded-xl text-base mt-2">
                   Отправить заявку
                 </button>
               </div>
-              <p className="text-xs mt-4 text-center" style={{ color: "rgba(244,240,224,0.4)" }}>
+              <p className="text-xs mt-4 text-center" style={{ color: "rgba(255,255,255,0.4)" }}>
                 Перезвоним в течение 30 минут в рабочее время
               </p>
             </div>
@@ -405,21 +405,21 @@ export default function Index() {
               ].map((c, i) => (
                 <div key={i} className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                    style={{ backgroundColor: "rgba(181,231,66,0.1)", border: "1px solid rgba(181,231,66,0.2)" }}>
-                    <Icon name={c.icon} size={20} style={{ color: "#b5e742" }} />
+                    style={{ backgroundColor: "rgba(46,204,113,0.1)", border: "1px solid rgba(46,204,113,0.2)" }}>
+                    <Icon name={c.icon} size={20} style={{ color: "#2ecc71" }} />
                   </div>
                   <div>
-                    <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "rgba(244,240,224,0.4)", fontFamily: "Oswald, sans-serif" }}>{c.label}</div>
+                    <div className="text-xs font-bold uppercase tracking-widest mb-1" style={{ color: "rgba(255,255,255,0.4)", fontFamily: "Oswald, sans-serif" }}>{c.label}</div>
                     <div className="text-lg font-semibold" style={{ fontFamily: "Oswald, sans-serif" }}>{c.value}</div>
                   </div>
                 </div>
               ))}
 
-              <div className="mt-4 p-6 rounded-2xl" style={{ backgroundColor: "#b5e742" }}>
-                <div className="text-xl font-black mb-1" style={{ fontFamily: "Oswald, sans-serif", color: "#0e1a05" }}>
+              <div className="mt-4 p-6 rounded-2xl" style={{ backgroundColor: "#2ecc71" }}>
+                <div className="text-xl font-black mb-1" style={{ fontFamily: "Oswald, sans-serif", color: "#1a1a1a" }}>
                   ВЫЕЗД В ДЕНЬ ОБРАЩЕНИЯ
                 </div>
-                <div className="text-sm" style={{ color: "rgba(14,26,5,0.7)" }}>
+                <div className="text-sm" style={{ color: "rgba(26,26,26,0.7)" }}>
                   Звоните — приедем и оценим бесплатно
                 </div>
               </div>
@@ -429,21 +429,21 @@ export default function Index() {
       </section>
 
       {/* FOOTER */}
-      <footer className="py-8 px-6 md:px-12 border-t" style={{ borderColor: "rgba(181,231,66,0.1)", backgroundColor: "#0a1203" }}>
+      <footer className="py-8 px-6 md:px-12 border-t" style={{ borderColor: "rgba(46,204,113,0.1)", backgroundColor: "#222222" }}>
         <div className="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: "#b5e742" }}>
-              <span className="text-xs font-bold" style={{ color: "#0e1a05", fontFamily: "Oswald, sans-serif" }}>ЭС</span>
+            <div className="w-7 h-7 rounded-full flex items-center justify-center" style={{ backgroundColor: "#2ecc71" }}>
+              <span className="text-xs font-bold" style={{ color: "#1a1a1a", fontFamily: "Oswald, sans-serif" }}>ЭС</span>
             </div>
-            <span className="font-bold" style={{ fontFamily: "Oswald, sans-serif", color: "#b5e742" }}>ЭкоСила</span>
+            <span className="font-bold" style={{ fontFamily: "Oswald, sans-serif", color: "#2ecc71" }}>ЭкоСила</span>
           </div>
-          <div className="text-xs" style={{ color: "rgba(244,240,224,0.3)" }}>
+          <div className="text-xs" style={{ color: "rgba(255,255,255,0.3)" }}>
             © 2026 ЭкоСила — Профессиональный уход за территорией
           </div>
           <div className="flex gap-4">
             {["Facebook", "Instagram", "Youtube"].map((s) => (
               <button key={s} className="w-8 h-8 rounded-full flex items-center justify-center transition-all hover:scale-110"
-                style={{ backgroundColor: "rgba(181,231,66,0.1)", border: "1px solid rgba(181,231,66,0.2)", color: "#b5e742" }}>
+                style={{ backgroundColor: "rgba(46,204,113,0.1)", border: "1px solid rgba(46,204,113,0.2)", color: "#2ecc71" }}>
                 <Icon name={s} size={14} fallback="Share2" />
               </button>
             ))}
