@@ -76,13 +76,12 @@ export default function Index() {
         className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-12 py-4"
         style={{ backgroundColor: "rgba(26,26,26,0.92)", backdropFilter: "blur(12px)", borderBottom: "1px solid rgba(46,204,113,0.1)" }}
       >
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full flex items-center justify-center" style={{ backgroundColor: "#2ecc71" }}>
-            <span className="text-sm font-bold" style={{ color: "#1a1a1a", fontFamily: "Oswald, sans-serif" }}>GCG</span>
-          </div>
-          <span className="text-lg font-bold tracking-wider" style={{ fontFamily: "Oswald, sans-serif", color: "#2ecc71" }}>
-            GREEN CLEAN GROUP
-          </span>
+        <div className="flex items-center">
+          <img
+            src="https://cdn.poehali.dev/files/1414c68d-0b72-4a2c-9cff-9403dac444f5.png"
+            alt="GREEN CLEAN GROUP"
+            className="h-12 w-auto object-contain"
+          />
         </div>
 
         <div className="hidden md:flex items-center gap-8">
