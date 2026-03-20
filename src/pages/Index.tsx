@@ -166,7 +166,7 @@ export default function Index() {
         </div>
 
         <div className="relative z-10 mt-20 px-6 md:px-12 grid grid-cols-3 gap-6 max-w-2xl">
-          {[["500+", "Объектов сдано"], ["8 лет", "На рынке"], ["100%", "Гарантия"]].map(([num, label]) => (
+          {[["500+", "Объектов сдано"], ["7 лет", "На рынке"]].map(([num, label]) => (
             <div key={num} className="flex flex-col gap-1">
               <span className="text-3xl md:text-4xl font-bold" style={{ fontFamily: "Oswald, sans-serif", color: "#b5e742" }}>{num}</span>
               <span className="text-xs md:text-sm" style={{ color: "rgba(244,240,224,0.5)", fontFamily: "Oswald, sans-serif", letterSpacing: "0.05em" }}>{label}</span>
