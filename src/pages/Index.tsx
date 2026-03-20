@@ -24,7 +24,7 @@ const services = [
     icon: "Truck",
     title: "Вывоз мусора",
     desc: "Вывозим строительный мусор, ветки, листья, старую мебель. Быстрый выезд, честная цена за объём.",
-    img: TRASH_IMG,
+    img: "https://cdn.poehali.dev/files/3583e039-c87c-43ea-9241-d713307cdef1.jpg",
     price: "Цена договорная",
   },
   {
