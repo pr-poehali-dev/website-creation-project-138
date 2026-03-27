@@ -3,6 +3,7 @@ import Icon from "@/components/ui/icon";
 
 const TREE_IMG = "https://cdn.poehali.dev/projects/6ead581f-3841-42c2-9488-2d97f20a81fd/files/5ebee14d-a084-473a-b305-05ab889709a8.jpg";
 const LAWN_IMG = "https://cdn.poehali.dev/projects/6ead581f-3841-42c2-9488-2d97f20a81fd/files/3bc8b2d3-2dd6-48d2-942e-657563ffbe39.jpg";
+const TRASH_IMG = "https://cdn.poehali.dev/files/3583e039-c87c-43ea-9241-d713307cdef1.jpg";
 
 const services = [
   {
@@ -80,10 +81,10 @@ const services = [
 const portfolio = [
   { img: TREE_IMG, title: "Опиловка сосны 25 м", tag: "Деревья" },
   { img: LAWN_IMG, title: "Газон 3 гектара", tag: "Трава" },
-  { img: TRASH_IMG, title: "Вывоз 8 тонн мусора", tag: "Вывоз" },
+  { img: "https://cdn.poehali.dev/files/3583e039-c87c-43ea-9241-d713307cdef1.jpg", title: "Вывоз 8 тонн мусора", tag: "Вывоз" },
   { img: TREE_IMG, title: "Формировка парка", tag: "Деревья" },
   { img: LAWN_IMG, title: "Дачный участок 60 соток", tag: "Трава" },
-  { img: TRASH_IMG, title: "Стройплощадка очистка", tag: "Вывоз" },
+  { img: "https://cdn.poehali.dev/files/3583e039-c87c-43ea-9241-d713307cdef1.jpg", title: "Стройплощадка очистка", tag: "Вывоз" },
 ];
 
 const reviews = [
